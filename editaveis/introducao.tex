@@ -1,68 +1,82 @@
 \chapter[Introdução]{Introdução}
 
+Neste capítulo, pretende-se contextualizar a pesquisa a ser realizada nesta monografia, o mesmo focado na Engenharia de Requisitos e seus processos. A partir da contextualização (\ref{ref:contextualizacao}), será apresentada uma problemática (\ref{ref:problematica}) no domínio da Engenharia de Requisitos. A partir da problemática, serão apresentadas as questões de pesquisa (\ref{ref:questao_pesquisa}) que norteiam a revisão da literatura bem como pretendem ser respondidas ao final do trabalho. Adicionalmente, são descritos os principais objetivos (\ref{ref:objetivos}) a serem atingidos ao longo da pesquisa. Por fim, tem-se a organização desta monografia (\ref{ref:organizacao}).
+
+\label{chap:intro}
+
 \section{Contextualização}
 
-A Engenharia de Requisitos é um ramo da Engenharia de \textit{Software} que se preocupa com os objetivos do mundo real, funções e restrições dos sistemas de \textit{software}, fazendo parte do ciclo de desenvolvimento do \textit{software}, e sendo crucial para o sucesso geral e precisão do sistema desenvolvido. Esse ramo também se preocupa com a relação desses fatores com caracterizações exatas do comportamento do \textit{software} e com a sua evolução ao longo do tempo \cite{elliott2012software}.
+\label{ref:contextualizacao}
 
-Desempenhando um papel significativo no desenvolvimento de aplicativos de \textit{software}, a Engenharia de Requisitos fornece uma maneira de entender e descrever os problemas que requerem uma solução de \textit{software}. Isso é crucial para compreender as necessidades dos usuários e especificar tais necessidades como requisitos de \textit{software} \cite{elliott2012software}. É uma área de suma importância, pois é necessária para melhorar as possibilidades de sucesso de um projeto.
+A Engenharia de Requisitos é um ramo da Engenharia de \textit{Software} que se preocupa com os objetivos reais, funções e restrições dos sistemas de \textit{software}, fazendo parte do ciclo de desenvolvimento do \textit{software}, e sendo fundamental para o sucesso geral do sistema desenvolvido. Esse ramo também se preocupa com a relação desses fatores com caracterizações exatas do comportamento do \textit{software} e com a sua evolução temporal \cite{elliott2012software}.
 
-A elicitação, a modelagem e a análise (verificação e validação) são processos essenciais dentro da Engenharia de Requisitos, os quais ajudam a cumprir o propósito de um \textit{software}. Além disso, a Engenharia de Requisitos documenta o sistema, identifica todas as partes interessadas e suas preocupações e apresenta essas informações de uma forma que possam ser analisadas e, eventualmente, implementadas \cite{elliott2012software}.
+Desempenhando um papel significativo no desenvolvimento de aplicativos de \textit{software}, a Engenharia de Requisitos fornece uma maneira de entender e descrever os problemas que requerem uma solução de \textit{software}. Isso é relevante para compreender as necessidades dos usuários e especificar tais necessidades como requisitos de \textit{software} \cite{elliott2012software}. Trata-se de uma área de suma importância, pois é necessária para melhorar as possibilidades de sucesso de um projeto.
+
+A elicitação, a modelagem e a análise (verificação e validação) são processos essenciais na Engenharia de Requisitos, os quais ajudam a cumprir o propósito de um \textit{software}. Além disso, a Engenharia de Requisitos documenta o sistema, identifica todas as partes interessadas e suas preocupações e apresenta essas informações de uma forma que possam ser analisadas e, eventualmente, implementadas \cite{elliott2012software}.
 
 \section{Problemática}
+\label{ref:problematica}
     
-Um dos grandes casos estudados na área de Engenharia de Requisitos é o sistema de \textit{software} desenvolvido para a automatização do Serviço de Ambulância de Londres (SAL). Este serviço tinha uma taxa de 2000 a 2500 ligações diárias, com uma frota de 750 veículos e área coberta de aproximadamente 1600 km². Foi operado manualmente até o ano de 1987, quando o sistema foi posto em funcionamento \cite{LodonFiasco}.
+Um dos grandes casos estudados na área de Engenharia de Requisitos é o sistema de \textit{software} desenvolvido para a automatização do Serviço de Ambulância de Londres (SAL). Este serviço tinha uma taxa de 2000 a 2500 ligações diárias, com uma frota de 750 veículos e área coberta de cerca de 1600 km². Foi operado manualmente até o ano de 1987, quando o sistema foi posto em funcionamento \cite{LodonFiasco}.
 
-O sistema ficou em operação por menos de 10 dias, e se mostrou totalmente ineficiente para as demandas do serviço que propunha automatizar. Foi causa da morte de, aproximadamente, 30 pessoas; gerou um prejuízo em torno de £1.5 milhões; casou a resignação do chefe executivo do SAL; instaurou um inquérito na equipe que desenvolveu o produto, e deixou em voga a responsabilização ética para profissionais de TI, como para outras áreas, tais como direito e medicina \cite{LodonFiasco}.
+O sistema ficou em operação por menos de 10 dias, e se mostrou totalmente ineficiente para as demandas do serviço que propunha automatizar. Foi causa da morte de, cerca de 30 pessoas; gerou um prejuízo em torno de £1.5 milhões; casou a resignação do chefe executivo do SAL; instaurou um inquérito na equipe que desenvolveu o produto, e deixou em voga a responsabilização ética para profissionais de TI, bem como para outras áreas, dentre elas: direito e medicina \cite{LodonFiasco}.
 
-Os principais pontos de erros levantados no trabalho de \cite{LodonFiasco}, levando em consideração os problemas de elicitação do projeto, foram:
+Os principais pontos de erros levantados no trabalho de \cite{LodonFiasco}, considerando os problemas de elicitação do projeto, foram:
 
 \begin{itemize}
-    \item Prolemas na definição do cronograma de execução do projeto, dado que foi definido um prazo irreal para o desenvolvimento do sistema, treinamento de pessoal e testes do \texit{software};
+    \item Prolemas na definição do cronograma de execução do projeto, dado que foi definido um prazo irreal para o desenvolvimento do sistema, treinamento de pessoal e testes do \textit{software};
     
-    \item O comitê responsável teve um papel mínimo no desenvolvimento do sistema, uma vez que, metade das pessoas ficaram responsáveis por grande parte do trabalho, e não levaram em conta a visão dos funcionários que trabalhavam dentro da ambulância. Isso levou a um cenário de forte introspecção, com poucos pontos de vista do sistema, criando algo que não atendia as necessidades e também não levava em consideração o contexto que estava inserido;
+    \item O comitê responsável teve um papel mínimo no desenvolvimento do sistema, visto que, metade das pessoas ficaram responsáveis por grande parte do trabalho, e não consideraram a visão dos funcionários que trabalhavam na ambulância. Isso levou a um cenário de forte introspecção, com poucos pontos de vista do sistema, criando algo que não atendia as necessidades e também não considerava o contexto inserido;
     
-    \item Não levou em consideração situações de erro dentro da captação de dados da situação e localização das ambulâncias ou mesmo de recursos de sistema necessários para que o sistema responsável para enviar ambulâncias em locais de incidentes pudesse funcionar corretamente. Em períodos com sobrecarga de chamados, o sistema colapsava e levava bastante tempo para executar;
+    \item Não considerou situações de erro na captação de dados da localização das ambulâncias ou mesmo de recursos necessários para que o sistema responsável por enviar ambulâncias em locais de incidentes pudesse funcionar corretamente. Em períodos com sobrecarga de chamados, o sistema colapsava e levava bastante tempo para executar;
     
-    \item Realizaram o treinamento inadequado, de forma que, os funcionários tiveram que se adaptar e compreender um sistema que ainda não estava totalmente pronto. Vale ressaltar que o \texit{software} teve uma série de modificações antes de ser finalizado, e
+    \item Realizaram o treinamento inadequado, de forma que, os funcionários tiveram que se adaptar e compreender um sistema que ainda não estava totalmente pronto. Vale ressaltar que o \textit{software} teve uma série de modificações antes de ser finalizado, e
     
-    \item O sistema foi testado, apenas, dentro do contexto de cada módulo em separado. Contudo, não foi testado a integração dos módulos e realizados os \textit{testes de estresse}\footnote{Definição}, que são vitais dentro do contexto de uma aplicação tão crítica.
+    \item O sistema foi testado, apenas, no contexto de cada módulo, ou seja, em separado. Contudo, não foi testada a integração dos módulos, assim como não realizados os \textit{testes de estresse}\footnote{Definição}, adequados no contexto de uma aplicação tão crítica.
 \end{itemize}
 
-A partir do exposto, nota-se o quão importante é uma Engenharia de Requisitos feita de forma adequada, assim como o quanto está diretamente associada ao sucesso do sistema desenvolvido. Impacta diretamente nos custos e no resultado final do produto. Um estudo realizado por \textit{Donald Firesmith} mostra que as empresas americanas têm um prejuízo acima de 30 bilhões de dólares por ano, acarretando em projetos fracassados \cite{king2008cost}.
+A partir do exposto, nota-se o quão importante é uma Engenharia de Requisitos elaborada adequadamente, assim como o quanto está diretamente associada ao sucesso do sistema desenvolvido. Impacta diretamente nos custos e no resultado do produto. Corroborando com esse ponto, há um estudo realizado por \textit{Donald Firesmith}, mostrando que as empresas americanas têm um prejuízo acima de 30 bilhões de dólares por ano, acarretando projetos fracassados \cite{king2008cost}.
 
 \section{Questão de Pesquisa}
+
+\label{ref:questao_pesquisa}
 
 Para guiar as pequisas e o desenvolvimento deste estudo, foram definidas as seguintes indagações:
 
 \begin{enumerate}
-    \item Como pode ser automatizado a \textit{hiperlinkagem} para que os rastros das ideias não se percam no processo da engenharia de requisitos?;
-    \item Como prover uma interface intuitiva que proporcione dados para realizar a \textit{hiperlinkagem} e gerar o MVP?, e
-    \item Como proporcionar uma experiência mais simples e intuitiva para que os desenvolvedores possam fazer o processo da Engenharia de Requisitos de forma mais fácil?.
+    \item Como pode ser automatizada a \textit{hiperlinkagem} para que os rastros das ideias não se percam no processo da Engenharia de Requisitos?;
+    \item Como prover uma \textit{interface} suficientemente satisfatória e que proporcione dados para realizar a \textit{hiperlinkagem} e gerar o MVP?, e
+    \item Como proporcionar uma abordagem mais simples e minimalista para que os desenvolvedores possam realizar mais facilmente o processo da Engenharia de Requisitos?.
 \end{enumerate}
 
 \section{Objetivos}
 
+\label{ref:objetivos}
+
 \subsection{Objetivo Geral}
 
-Desenvolver uma ferramenta que viabilize a automatização e auxilie todo o processo de Engenharia de Requisitos, de forma a embasar a construção de uma aplicação e evitar que retrabalhos e desperdícios de tempo ocorram devido ao mal planejamento. A ferramenta funcionará de forma a dar ênfase nas etapas da Engenharia de Requisitos, de forma que, uma vez concluída uma etapa, a próxima é desbloqueada.
+Desenvolver uma ferramenta que viabilize automatizações e auxilie no processo de Engenharia de Requisitos, para embasar a construção de uma aplicação e mitigar retrabalhos e desperdícios de tempo. A ferramenta funcionará conferindo ênfase nas etapas da Engenharia de Requisitos, de forma que, uma vez concluída uma etapa, a próxima é desbloqueada.
 
 \subsection{Objetivos Específicos}
 
 \begin{enumerate}
-    \item Desenvolver uma aplicação que automatize a \textit{hiperlinkagem} entre os artefatos de requisitos;
-    \item Desenvolver uma aplicação que viabilize a geração do MVP em cima dos artefatos gerados;
-    \item Criar uma interface que guie o usuário no processo de criação dos artefatos de requisitos mapeados, e
-    \item Elaborar uma interface que seja intuitiva e proporcione uma boa experiência de usuário para facilitar o processo da Engenharia de Requisitos.
+    \item \label{oe_hiperlinkagem} Desenvolver uma aplicação que automatize a \textit{hiperlinkagem} entre os artefatos de requisitos;
+    \item \label{oe_mvp} Desenvolver uma aplicação que viabilize a geração do MVP com base nos artefatos gerados;
+    \item \label{oe_guiar_usuario} Criar uma \textit{interface} que guie o usuário no processo de criação dos artefatos de requisitos mapeados;
+    \item \label{oe_ux_facilitada} Elaborar uma \textit{interface} e proporcionar uma experiência de usuário satisfatória, visando facilitar o processo da Engenharia de Requisitos, e
+    \item \label{oe_resultados} Prover uma primeira análise dos resultados obtidos, usando como base uma amostra do público alvo.
 \end{enumerate}
 
 \section{Organização da Monografia}
 
-O trabalho foi dividido de acordo com o seguinte formato:
+\label{ref:organizacao}
+
+A monografia está estruturada conforme os seguintes capítulos:
 
 \begin{itemize}
-    \item Capítulo 2 - Embasamento Teórico: apresenta o que existe na literatura no que permeia e da suporte ao tema do trabalho;
-    \item Capitulo 3 - Referencial Tecnológico: caracteriza as tecnologias que serão usadas para o desenvolvimento desta monografia;
-    \item Capítulo 4 - Metodologia: Define como será realizada a condução do trabalho, desde a pesquisa, até a construção do \textit{framework} e análise dos resultados;
-    \item Capítulo 5 - Proposta: Contém a proposta de funcionamento do \textit{framework}, definições importantes de arquitetura e interface e o \textit{backlog}\footnote{O termo é explicado na seção \ref{sec:backlog} deste trabalho} do produto, e
-    \item Capítulo 6 - Resultado Parciais: Apresenta os principais resultados obtidos nesse primeiro momento do desenvolvimento da monografia.
+    \item Capítulo 2 - Embasamento Teórico: apresenta o que existe na literatura no que permeia e oferece apoio, em termos conceituais, ao tema do trabalho;
+    \item Capitulo 3 - Referencial Tecnológico: descreve as tecnologias que estão sendo utilizadas para o desenvolvimento do trabalho na totalidade;
+    \item Capítulo 4 - Metodologia: define como será realizada a condução do trabalho, desde a pesquisa, até a construção da ferramenta e a análise dos resultados;
+    \item Capítulo 5 - Proposta: acorda outros detalhes, inerentes à proposta deste trabalho, revelando definições, arquitetura, protótipo, além de um esboço inicial do \textit{backlog}\footnote{O termo é explicado na seção \ref{sec:backlog} deste trabalho} do produto, e
+    \item Capítulo 6 - Considerações Finais: apresenta os principais resultados do trabalho obtidos nesse primeiro momento do desenvolvimento do trabalho.
 \end{itemize}
