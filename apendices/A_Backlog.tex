@@ -1,0 +1,52 @@
+\chapter{\textit{Backlog} da Ferramenta}
+
+\label{ap:backlog}
+
+O \textit{Backlog} do Produto é um artefato essencial na Engenharia de Requisitos, na metodologia ágil e no ciclo de desenvolvimento de um produto, pois todos os requisitos constam nele. Em uma definição mais concreta, o \textit{Backlog} é uma lista ordenada e emergente de tudo necessário no produto, ou seja, é a única fonte dos requisitos \cite{carolipaulo2021}. Todas as funcionalidades são descritas no \textit{Backlog} e é o que o cliente espera receber no fim do projeto. Além disso, algumas definições são importantes no \textit{Backlog}, são elas:
+
+\begin{itemize}
+    \item \textbf{Épico}: é uma grande parte de trabalho que, geralmente, é dividida em tarefas menores, ou seja, histórias de usuário;
+    \item \textit{\textbf{Feature}}: é uma funcionalidade que faz parte de um módulo, possuindo seus requisitos funcionais e suas regras de negócio;
+    \item \textbf{História de Usuário}: é uma função da \textit{feature} e está associado a ela. Objetivamente, equivale aos requisitos funcionais de uma \textit{interface}.
+\end{itemize}
+
+A Tabela \ref{tab:backlog} descreve as funcionalidades da ferramenta proposta, usando as definições descritas anteriormente, buscando proporcionar um melhor nível de detalhamento para ter requisitos mais consistentes e coerentes com as necessidades do produto.
+
+% \newEpic{epic_name;2;feature_name;2;quem;o_que;porque}
+% \newFeature{feature_name;2;quem;o_que;porque}
+% \newUS{quem;o_que;porque}
+
+\begin{backlog}{\textit{Backlog} do iFlow. Fonte: Autores, 2022}{tab:backlog}
+    \newEpic{Artefatos;19;Pré-rastreabilidade;5;usuário;poder criar um 5W2H da minha aplicação;definir o escopo de atuação do meu projeto}
+    \newUS{usuário;inserir o Rich Picture da minha aplicação, criado externamente;compor meu portfólio de requisitos}
+    \newFeature{Elicitação;11;usuário;documentar um \textit{Brainstorming} realizado com meu time; poder extrair requisitos}
+    \newUS{usuário;adicionar os dados obtidos de um questionário, realizado externamente;poder extrair requisitos}
+    \newUS{usuário;adicionar um protótipo de baixa fidelidade, desenvolvido externamente;poder extrair requisitos}
+    \newUS{usuário;criar um Storytelling;poder extrair requisitos}
+    \newUS{usuário;criar um roteiro de entrevista;poder conduzir uma entrevista}
+    \newUS{usuário;cadastrar as resopstas de um questionário;poder extrair requisitos}
+    \newUS{usuário;desenvolver uma Analise de Protocolo;poder extrair reuquisitos}
+    \newFeature{Modelagem;9;usuário;criar o \textit{backlog} a partir das requisitos já extraídos;ter requisitos mais amadurecidos}
+    \newUS{usuário;criar um NFR adaptado;ter requisitos não-funcionais amadurecidos}
+    \newUS{usuário;criar Léxicos para minha aplicação;melhorar a definição dos termos usados na aplicação}
+    \newUS{usuário;realizar a ligação entre os léxicos e as suas definições;melhorar a navegabilidade}
+    \newFeature{Verificação;10;usuário;fazer um \textit{checklist};corroborar a qualidade e o formato do artefato gerado}
+    \newUS{usuário;ter pré-sugestões de comprovações baseadas na literatura;facilitar e usar as definições adequadas}
+    \newUS{usuário;usufruir de uma interface adequada para relizar a verificação;realizar o procedimento corretamente}
+    \newFeature{Priorização;1;usuário;desenvolver o \textit{House of Quality} a partir dos requisitos elicitados, correlacionando requisitos funcionais e não funcionais;identificar as necessidades do sistema}
+    \newUS{usuário;gerar um \textit{Minimum Viable Product} (MVP) a partir do do \textit{House of Quality};saber o que precisa ser desenvolvido com prioridade}
+    \newEpic{Usuários;18;Gerenciamento de Contas;8;usuário;registrar uma conta de usuário;conseguir utilizar a ferramenta e criar um novo projeto}
+    \newUS{usuário;deletar a minha conta de usuário;não utilizar mais a aplicação}
+    \newUS{iFlow;validar o \textit{e-mail} do usuário cadastrado;garantir a existência do \textit{e-mail}}
+    \newFeature{Acesso;7;usuário;realizar o \textit{login};iniciar minha sessão}
+    \newUS{usuário;realizar o \textit{logout};sair da minha sessão}
+    \newUS{iFlow;controlar o acesso por meio de \textit{token JSON Web Token} (JWT);garantir a segurança da ferramenta}
+    \newFeature{Manutenção de Contas;3;usuário;editar minha senha;manter a segurança dos meus dados}
+    \newUS{usuário;editar meu perfil;alterar meus dados}
+    \newEpic{Performance;13;Requisitos;5;iFlow;que os requisitos de todas as etapas sejam modelados como um grafo;viabilizar o cálculo do \textit{Minimum Viable Product} (MVP)}
+    \newUS{usuário;que os requisitos possam ser versionados e evoluídos;manter o rastro de um requisito desde a sua origem}
+    \newFeature{Utilidades;6;usuário;navegar entre as etapas já disponíveis;consertar ou adicionar algo que foi esquecido no desenvolvimento do processo}
+    \newUS{usuário;visualizar, de forma agrupada, os artefatos gerados;apresentar para os \textit{stakeholders} do projeto}
+    \newUS{usuário;gerar um relatório dos artefatos gerados em cada processo;apresentar externamente ou usar como documentação}
+    \newUS{usuário;ter uma fácil visualização das etapas da Engenharia de Requisitos;ter uma navegação mais intuitiva}
+\end{backlog}

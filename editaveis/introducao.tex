@@ -1,6 +1,6 @@
 \chapter[Introdução]{Introdução}
 
-Neste capítulo, pretende-se contextualizar a pesquisa a ser realizada nesta monografia, o mesmo focado na Engenharia de Requisitos e seus processos. A partir da contextualização (\ref{ref:contextualizacao}), será apresentada uma problemática (\ref{ref:problematica}) no domínio da Engenharia de Requisitos. A partir da problemática, serão apresentadas as questões de pesquisa (\ref{ref:questao_pesquisa}) que norteiam a revisão da literatura bem como pretendem ser respondidas ao final do trabalho. Adicionalmente, são descritos os principais objetivos (\ref{ref:objetivos}) a serem atingidos ao longo da pesquisa. Por fim, tem-se a organização desta monografia (\ref{ref:organizacao}).
+Neste capítulo, pretende-se contextualizar a pesquisa a ser realizada neste trabalho, sendo a mesma focada na Engenharia de Requisitos e seus processos. A partir da contextualização (seção \ref{ref:contextualizacao}), será apresentada uma problemática (seção \ref{ref:problematica}) no domínio da Engenharia de Requisitos. A partir da problemática, serão apresentadas as questões de pesquisa (seção \ref{ref:questao_pesquisa}) que norteiam a revisão da literatura bem como pretendem ser respondidas ao final do trabalho. Adicionalmente, são descritos os principais objetivos (seção \ref{ref:objetivos}) a serem atingidos ao longo da pesquisa. Por fim, tem-se a organização desta monografia (seção \ref{ref:organizacao}).
 
 \label{chap:intro}
 
@@ -12,7 +12,7 @@ A Engenharia de Requisitos é um ramo da Engenharia de \textit{Software} que se 
 
 Desempenhando um papel significativo no desenvolvimento de aplicativos de \textit{software}, a Engenharia de Requisitos fornece uma maneira de entender e descrever os problemas que requerem uma solução de \textit{software}. Isso é relevante para compreender as necessidades dos usuários e especificar tais necessidades como requisitos de \textit{software} \cite{elliott2012software}. Trata-se de uma área de suma importância, pois é necessária para melhorar as possibilidades de sucesso de um projeto.
 
-A elicitação, a modelagem e a análise (verificação e validação) são processos essenciais na Engenharia de Requisitos, os quais ajudam a cumprir o propósito de um \textit{software}. Além disso, a Engenharia de Requisitos documenta o sistema, identifica todas as partes interessadas e suas preocupações e apresenta essas informações de uma forma que possam ser analisadas e, eventualmente, implementadas \cite{elliott2012software}.
+A elicitação, a modelagem e a análise (verificação e validação) são processos essenciais na Engenharia de Requisitos, os quais ajudam a cumprir o propósito de um \textit{software}. Além disso, a Engenharia de Requisitos documenta o sistema, identifica todas as partes interessadas e suas preocupações, e apresenta essas informações de uma forma que possam ser analisadas e, eventualmente, implementadas \cite{elliott2012software}.
 
 \section{Problemática}
 \label{ref:problematica}
@@ -32,7 +32,7 @@ Os principais pontos de erros levantados no trabalho de \cite{LodonFiasco}, cons
     
     \item Realizaram o treinamento inadequado, de forma que, os funcionários tiveram que se adaptar e compreender um sistema que ainda não estava totalmente pronto. Vale ressaltar que o \textit{software} teve uma série de modificações antes de ser finalizado, e
     
-    \item O sistema foi testado, apenas, no contexto de cada módulo, ou seja, em separado. Contudo, não foi testada a integração dos módulos, assim como não realizados os \textit{testes de estresse}\footnote{Definição}, adequados no contexto de uma aplicação tão crítica.
+    \item O sistema foi testado, apenas, no contexto de cada módulo, ou seja, em separado. Contudo, não foi testada a integração dos módulos, assim como não realizados os \textit{testes de estresse}, adequados no contexto de uma aplicação tão crítica.
 \end{itemize}
 
 A partir do exposto, nota-se o quão importante é uma Engenharia de Requisitos elaborada adequadamente, assim como o quanto está diretamente associada ao sucesso do sistema desenvolvido. Impacta diretamente nos custos e no resultado do produto. Corroborando com esse ponto, há um estudo realizado por \textit{Donald Firesmith}, mostrando que as empresas americanas têm um prejuízo acima de 30 bilhões de dólares por ano, acarretando projetos fracassados \cite{king2008cost}.
@@ -55,17 +55,20 @@ Para guiar as pequisas e o desenvolvimento deste estudo, foram definidas as segu
 
 \subsection{Objetivo Geral}
 
-Desenvolver uma ferramenta que viabilize automatizações e auxilie no processo de Engenharia de Requisitos, para embasar a construção de uma aplicação e mitigar retrabalhos e desperdícios de tempo. A ferramenta funcionará conferindo ênfase nas etapas da Engenharia de Requisitos, de forma que, uma vez concluída uma etapa, a próxima é desbloqueada.
+Desenvolver uma ferramenta que viabilize automatizações e auxilie no processo de Engenharia de Requisitos, para embasar a construção de uma aplicação e mitigar retrabalhos e desperdícios de tempo. A ferramenta funcionará conferindo ênfase nas etapas da Engenharia de Requisitos, de forma que, uma vez concluída uma etapa, a próxima é desbloqueada, permitindo que o usuário volte em etapas anteriores para que haja um refinamento da mesma.
 
 \subsection{Objetivos Específicos}
 
 \begin{enumerate}
-    \item \label{oe_hiperlinkagem} Desenvolver uma aplicação que automatize a \textit{hiperlinkagem} entre os artefatos de requisitos;
-    \item \label{oe_mvp} Desenvolver uma aplicação que viabilize a geração do MVP com base nos artefatos gerados;
-    \item \label{oe_guiar_usuario} Criar uma \textit{interface} que guie o usuário no processo de criação dos artefatos de requisitos mapeados;
-    \item \label{oe_ux_facilitada} Elaborar uma \textit{interface} e proporcionar uma experiência de usuário satisfatória, visando facilitar o processo da Engenharia de Requisitos, e
-    \item \label{oe_resultados} Prover uma primeira análise dos resultados obtidos, usando como base uma amostra do público alvo.
+    \item \label{oe_hiperlinkagem} Desenvolver uma ferramenta que automatize a \textit{hiperlinkagem} entre os artefatos de requisitos;
+    \item \label{oe_mvp} Evoluir a ferramenta para que a mesma viabilize a geração do MVP com base nos artefatos gerados;
+    \item \label{oe_guiar_usuario} Prover uma \textit{interface} para a ferramenta que guie o usuário no processo de criação de alguns artefatos de requisitos pré-definidos;
+    \item \label{oe_ux_facilitada} Viabilizar a criação da \textit{interface}, mencionada no item anterior, de modo a proporcionar uma experiência de usuário satisfatória, visando facilitar o processo da Engenharia de Requisitos, e
+    \item \label{oe_resultados} Realizar uma primeira análise dos resultados obtidos, usando como base uma amostra do público alvo.
 \end{enumerate}
+
+Adicionalmente aos objetivos específicos listados, pretende-se embasar a pesquisa considerando a literatura especializada, bem como conduzir a pesquisa orientando-se por uma metodologia adequada. Portanto, são realizadas atividade de levantamento bibliográfico e definição de uma metodologia, ambas acordadas no Capítulo de Metodologia (\ref{chap:metodologia}).
+
 
 \section{Organização da Monografia}
 
@@ -78,5 +81,5 @@ A monografia está estruturada conforme os seguintes capítulos:
     \item Capitulo 3 - Referencial Tecnológico: descreve as tecnologias que estão sendo utilizadas para o desenvolvimento do trabalho na totalidade;
     \item Capítulo 4 - Metodologia: define como será realizada a condução do trabalho, desde a pesquisa, até a construção da ferramenta e a análise dos resultados;
     \item Capítulo 5 - Proposta: acorda outros detalhes, inerentes à proposta deste trabalho, revelando definições, arquitetura, protótipo, além de um esboço inicial do \textit{backlog}\footnote{O termo é explicado na seção \ref{sec:backlog} deste trabalho} do produto, e
-    \item Capítulo 6 - Considerações Finais: apresenta os principais resultados do trabalho obtidos nesse primeiro momento do desenvolvimento do trabalho.
+    \item Capítulo 6 - Considerações Finais: apresenta os principais resultados obtidos nesse primeiro momento do desenvolvimento do trabalho.
 \end{itemize}

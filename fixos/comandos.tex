@@ -10,3 +10,145 @@
 	\fi}%
 % ---
 
+\NewDocumentEnvironment{backlog}{mm +b}{
+\hsize=\textheight
+\uselandscape
+\begin{longtable}{
+|C{0.07\hsize}
+|C{0.11\hsize}
+|C{0.07\hsize}
+|C{0.11\hsize}
+|C{0.07\hsize}
+|C{0.11\hsize}
+|C{0.15\hsize}
+|C{0.15\hsize}|
+}
+    \hline
+        \multirow{2}{*}{\textbf{ID}} &
+        \multirow{2}{*}{\textbf{Épico}} &
+        \multirow{2}{*}{\textbf{ID}} &
+        \multirow{2}{*}{\textbf{Feature}} &
+        \multirow{2}{*}{\textbf{ID}} &
+       \multicolumn{3}{c|}{\textbf{História de Usuário}} \\
+    \cline{6-8}
+        &
+        &
+        &
+        &
+        &
+        \textbf{Quem?} &
+        \textbf{O que?} &
+        \textbf{Por quê?}
+    #3
+    \\ \hline
+\caption{#1}
+\label{#2}
+\end{longtable}
+}{
+\useportrait%
+}
+
+% \newEpic{epic_name;2;feature_name;2;quem;o_que;porque}
+% \newFeature{feature_name;2;quem;o_que;porque}
+% \newUS{quem;o_que;porque}
+
+\NewDocumentCommand{\newEpic}{>{\SplitArgument{6}{;}}m}{%
+    \finallimsetEpic#1%
+}
+\NewDocumentCommand{\finallimsetEpic}{mmmmmmm}{%
+\\ \hline%
+\multirow{#2}{*}{\Epic} &%
+\multirow{#2}{*}{\parbox{\linewidth}{\centering#1}} &%
+\multirow{#4}{*}{\Feature} &%
+\multirow{#4}{*}{\parbox{\linewidth}{\centering#3}} &%
+\ReqFun & Eu, como #5, & desejo #6, & para #7%
+}
+
+\NewDocumentCommand{\newFeature}{>{\SplitArgument{4}{;}}m}{%
+    \finallimsetFeature#1%
+}
+\NewDocumentCommand{\finallimsetFeature}{mmmmm}{%
+\\ \cline{3-8}
+& &%
+\multirow{#2}{*}{\Feature} &%
+\multirow{#2}{*}{\parbox{\linewidth}{\centering#1}} &%
+\ReqFun & Eu, como #3, & desejo #4, & para #5%
+}
+
+\NewDocumentCommand{\newUS}{>{\SplitArgument{2}{;}}m}{%
+    \finallimsetUS#1%
+}
+\NewDocumentCommand{\finallimsetUS}{mmm}{%
+\\ \cline{5-8}%
+& & & &%
+\ReqFun & Eu, como #1, & desejo #2, & para #3%
+}
+
+\newcounter{reqFuncional}
+
+
+\newcommand*{\ReqFun}{%
+\stepcounter{reqFuncional}%
+\ifthenelse{\value{reqFuncional}<10}{%
+\textbf{[US00\arabic{reqFuncional}]}}{%
+\ifnum\value{reqFuncional}<100{%
+\textbf{[US0\arabic{reqFuncional}]}}%
+\else{\textbf{[US\arabic{reqFuncional}]}}%
+\fi}%
+}%
+
+
+\newcounter{epico}%
+
+\newcommand*{\Epic}{%
+\stepcounter{epico}%
+\ifthenelse{\value{epico}<10}{%
+\textbf{[EP00\arabic{epico}]}}{%
+\ifnum\value{epico}<100 {%
+\textbf{[EP0\arabic{epico}]}}%
+\else{\textbf{[EP\arabic{epico}]}}%
+\fi}%
+}%
+
+\newcounter{feature}%
+
+\newcommand*{\Feature}{%
+\stepcounter{feature}%
+\ifthenelse{\value{feature}<10}{%
+\textbf{[FE00\arabic{feature}]}}{%
+\ifnum\value{feature}<100{%
+\textbf{[FE0\arabic{feature}]}}%
+\else{\textbf{[FE\arabic{feature}]}}%
+\fi}%
+}%
+    
+    
+\newcounter{reqNFuncional}
+
+\newcommand*{\ReqNaoFun}{%
+\stepcounter{reqNFuncional}%
+\ifthenelse{\value{reqNFuncional}<10}{%
+\textbf{[NF00\arabic{reqNFuncional}]}}{%
+\ifnum\value{reqNFuncional}<100{%
+\textbf{[NF0\arabic{reqNFuncional}]}}%
+\else{\textbf{[NF\arabic{reqNFuncional}]}}%
+\fi}%
+}%
+
+
+\newcommand*{\useportrait}{%
+  \clearpage
+  \KOMAoptions{paper=portrait,DIV=current}%switch to portrait
+  \newgeometry{% geometry settings for portrait
+    left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.7cm
+  }%
+  \fancyhfoffset{0pt}% <- recalculate head and foot width for fancyhdr
+}
+\newcommand*{\uselandscape}{%
+  \clearpage
+  \KOMAoptions{paper=landscape,DIV=current}%switch to landscape
+  \newgeometry{% geometry settings for landscap
+    left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.7cm
+  }%
+  \fancyhfoffset{0pt}% recalculate head and foot width for fancyhdr
+}

@@ -1,5 +1,7 @@
 \chapter[Proposta]{Proposta}
 
+\label{chap:proposta}
+
 Este capítulo visa detalhar a proposta deste Trabalho de Conclusão de Curso, que se baseia na construção de uma ferramenta orientada ao gerenciamento e suporte ao processo da Engenharia de Requisitos. Portanto, a primeira seção apresenta a contextualização da proposta e a ferramenta \textit{iTrace}, com a arquitetura de \textit{software} e as especificidades dos módulos do sistema. Posteriormente, será apresentada a identidade visual da ferramenta junto ao protótipo de alta fidelidade. Por fim, apresentam-se as páginas e as dinâmicas que tornam viável a semi-automatização dos processos da Engenharia de Requisitos.
 
 \section{Contextualização}
@@ -20,27 +22,90 @@ Com esse objetivo, os artefatos usados para esta etapa são o \textit{5W2H} (se�
 
 \subsection{Elicitação}
 
-Construído e definido a visão geral do produto de \textit{software}, a ferramenta parte para a segunda etapa do processo, que levanta do maior número possível de features. A intenção é que se colete diferentes pontos de vistas em diferentes contextos com opiniões distintas. Com esses diferentes aspectos espera-se ter features mais ricas;
-Várias artefatos serão dados ao usuário para o construção dessa etapa, contudo não será obrigatório que o mesmo faça todos para seguir ao próximo nível;
-Pode-se ter uma sugestão ou valor mínimo de features para que o usuário passe para a próxima etapa;
-A proposta é que o usuário tenha a possibilidade de adicionar diferentes imagens, vídeos, áudios e documentos de texto e, assim, possa extrair novas features;
-Para embasar o usuário, pequenas definições serão colocadas ao lado de cada artefato de forma a guiar a geração daquele artefato;
-Como possibilidade, pode-se ter documentos externos que tenham uma boa definição do que é o artefato caso o usuário queira aprender;
+\label{sec:proc_elicitacao}
 
+Construído e definido a visão geral do produto de \textit{software}, a ferramenta parte para a segunda etapa do processo, que levanta o maior número possível de requisitos. A intenção é que se colete diferentes pontos de vistas em diferentes contextos e com opiniões distintas, para se terem definições do produto mais ricas e que agreguem mais valor para os \textit{stakeholders}.
+
+Dessa forma, na ferramenta existem diversas propostas de métodos que proporcionam modelos que auxiliam na elicitação dessas funcionalidades. Vale salientar que tais métodos não serão obrigatórios para que o usuário siga para a próxima etapa, mas será evidenciado a importância desta etapa, além de uma confirmação de que as funcionalidades levantadas são suficientes para a construção do produto \textit{software}.
+
+No contexto de cada ferramental, o usuário tem a possibilidade de adicionar diferentes fontes de dados para compor o artefato, sendo: imagens, vídeos, áudios e documentos de texto. O intuito é, que a partir dessas informações, novas funcionalidades sejam adquiridas.
+
+Por conta da complexidade de cada artefato, são disponibilizadas definições rápidas que tem o objetivo de guiar melhor o desenvolvimento. Para estudos mais aprofundados, fontes da literatura reconhecidas são sugeridas na ferramenta.
+
+Neste sentido, os artefatos disponibilizados para viabilizar a etapa da elicitação são:
+
+\begin{itemize}
+    \item \textit{Brainstorming} (seção \ref{sec:brainstorming}), que coleta o maior número de ideias acerca do produto de \textit{software};
+    \item Questionário (seção \ref{sec:questionario}), que tem o objetivo de coletar o maior número de informações a respeito do tema em questão;
+    \item Protótipo de Baixa Fidelidade (\ref{sec:prototipo-def}), que ajuda, de forma visual, na elicitação dos requisitos;
+    \item \textit{Storytelling} (seção \ref{sec:storytelling}), que extrai as \textit{features} do sistema em um determinado contexto;
+    \item Entrevista (seção \ref{sec:entrevista}), que, de certa forma, traz uma visão mais concreta acerca de um tema pelo fato de se ter uma comunicação mais natural entre os envolvidos, e
+    \item Análise de Protocolo, que sintetiza os pensamentos de um usuário e, a partir disso, tem-se a extração de possíveis requisitos do sistema.
+\end{itemize}
+
+\subsection{Modelagem}
+
+Com as funcionalidades levantadas, a ferramenta segue para a próxima etapa do processo que visa colocar em modelos estruturados todas as ideias obtidas na etapa anterior (\ref{sec:proc_elicitacao}). Diferentemente da elicitação, que tem uma visão muito aberta e livre para proporcionar um espaço saudável para que a criatividade seja o principal foco, este nível visa chegar em um ponto mais concreto e consistente para a construção de uma aplicação. O propósito aqui, é gerar modelos capazes de representar características ou comportamentos do produto de \textit{software}, que possam guiar todo o processo de desenvolvimento.
+
+Vale destacar a importância deste processo, pois concluída esta etapa, o usuário deve ter uma forma que viabilize a construção do produto de \textit{software}. Neste ponto, deve-se ter uma visão mais concreta e definitiva da aplicação que se almeja desenvolver.
+
+Esta etapa é imprescindível, pois aqui são gerados artefatos essenciais para a aplicação que será desenvolvida. Sendo assim, os artefatos usados para esta etapa são o \textit{Backlog} (seção \ref{sec:backlog}), que concentra a lista de defeitos, melhorias solicitadas pelo cliente, funcionalidades, entre outros itens que expressam os requisitos do produto, o NFR \textit{Framework} (seção \ref{sec:nfr}), que sintetiza os requisitos não funcionais do sistema no formato de um grafo, e os Léxicos (\ref{sec:lexicos}), que transcrevem todos os vocábulos utilizados no domínio de uma aplicação.
+
+\subsection{Verificação}
+
+Para evitar retrabalhos e gerar artefatos que estejam os mais corretos e concisos possíveis, esta etapa tem o objetivo de revisar o que foi gerado até o momento (seção \ref{sec:verificacao}). No contexto de cada artefato, existem regras e métodos que devem ser seguidos ou algum objetivo que existe ao realizar aquela atividade. Portanto, para cada um dos artefatos gerados, a ferramenta sugere alguns pontos de checagem para que o usuário revise aquilo que foi elaborado, como propõe \citeauthoronline{design_fagan} (\citeyear{design_fagan}) em seu método de inspeção. Todavia, isso não impede que o usuário defina pontos que ache relevantes de avaliar.
+
+Definidos quais pontos são relevantes para a avaliação, o usuário dispõe de uma visualização conjunta do artefato revisado para poder realizar o processo de \textit{inspeção}. Feito isso, a ferramenta apresenta ao usuário métricas de precisão do artefato, viabilizando uma correção dos pontos de melhoria levantados.
+
+\subsection{Pós-rastreabilidade}
+
+Em posse de requisitos modelados e concisos, esta etapa trata de um processo automático gerado pela ferramenta que produz um grafo (seção \ref{sec:grafos}) a partir do que foi realizado nas etapas anteriores. Esse artefato, chamado \textit{Backward-from} (seção \ref{sec:pos-rastreabilidade}), mantém um requisito desde sua origem e mantém a visão obtida no momento que o requisito foi extraído.
+
+\subsection{Priorização}
+
+Esta etapa é de suma importância no contexto do processo da Engenharia de Requisitos, pois nela que será definido o Produto Mínimo Viável (seção \ref{sec:priorizacao}) a partir da \textit{House of Quality} (seção \ref{sec:house_of_quality}), onde se tem a correlação dos requisitos funcionais e não funcionais e seus \textit{softgoals}. Aqui, determina-se quais são as principais funcionalidades do produto de \textit{software}, que deve ser validado e efetivado pelo usuário final.
 
 \section{Arquitetura de Software}
 Conforme é observado na figura \ref{fig:arquitetura}, a arquitetura de \textit{software} proposta inclui a integração de 2 módulos: o \textit{front-end} e o \textit{back-end}.
 
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale=1.0]{figuras/Proposta/arquitetura.png}
+        \caption{{Arquitetura do \textit{Software} da ferramenta \textit{iFlow}. Fonte: Autores, 2022}}
+        \label{fig:arquitetura}
+    \end{center}
+\end{figure}
+
 \subsection{\textit{Front-end}}
-O \textit{Front-end} será responsável por realizar as interações com o usuário e com o \textit{back-end}. Além disso, é responsável pela \textit{interface} da ferramenta utilizando recursos \textit{HTML} e \textit{CSS} com o \textit{framework} \textit{React}. Essas tecnologias foram escolhidas devido ao grande suporte que elas oferecem para a construção de \textit{interfaces} de usuário interativas, e são descritas com mais detalhes no capítulo \ref{chap:referencial_tecnologico}.
+O \textit{Front-end} será responsável por realizar as interações com o usuário e com o \textit{back-end}. Além disso, é responsável pela \textit{interface} da ferramenta utilizando recursos \textit{HTML} e \textit{CSS} com o \textit{framework} \textit{React}. Sendo assim, essas tecnologias foram escolhidas devido ao grande suporte que elas oferecem para a construção de \textit{interfaces} de usuário interativas, descritas com mais detalhes no capítulo \ref{chap:referencial_tecnologico}.
 
 \subsection{\textit{Back-end}}
-
+O \textit{Back-end} será responsável por realizar a conexão com o banco de dados, por armazena os dados que serão consumidos ou manipulados pelo \textit{software} e por realizar o tratamento dos dados. Dessa forma, foi escolhida a tecnologia \textit{Node.js} visando realizar a comunicação entre as camadas de banco de dados e de \textit{front-end}. A tecnologia é descrita com mais detalhes no capítulo \ref{chap:referencial_tecnologico}.
 
 \section{Identidade Visual}
 
-\subsection{Paleta de Cores}
+A Identidade Visual é um conjunto de elementos gráficos e visuais visando mostrar os principais elementos do seu produto e seus valores. Com o intuito de dar uma identidade visual para a ferramenta \textit{iFlow}, foi elaborado um manual que elenca os logotipos, as cores, a tipografia e os símbolos definidos para o projeto, que está descrito com maiores detalhes no apêndice \ref{apendice:identidade_visual}.
 
-\subsection{Tipografia}
+\section{Diagramas da Aplicação}
 
-\subsection{Logotipo}
+\subsection{Banco de Dados}
+
+Os diagramas de Banco de Dados visam modelar como os dados serão armazenados pela aplicação. O DE-R (figura \ref{fig:diagrama_conceitual}) é a representação gráfica e a principal ferramenta de visualização dos relacionamentos entre as entidades do sistema. Já o DL (figura \ref{fig:diagrama_logico}) descreve como os dados serão armazenados no banco, além dos seus relacionamentos.
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale=0.29]{figuras/Proposta/Conceitual_iFlow.png}
+        \caption{{DE-R do Banco de Dados do \textit{iFlow}. Fonte: Autores, 2022}}
+        \label{fig:diagrama_conceitual}
+    \end{center}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale=0.35]{figuras/Proposta/Lógico_iFlow.png}
+        \caption{{DL do Banco de Dados do \textit{iFlow}. Fonte: Autores, 2022}}
+        \label{fig:diagrama_logico}
+    \end{center}
+\end{figure}
+
+O código que cria a base de dados da Ferramenta \textit{iFlow} está disponível no Apêndice \ref{ap:db_sql}.
