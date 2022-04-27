@@ -10,26 +10,29 @@
 	\fi}%
 % ---
 
-\NewDocumentEnvironment{backlog}{mm +b}{
+\NewDocumentEnvironment{backlog}{mmm +b}{
 \hsize=\textheight
 \uselandscape
 \begin{longtable}{
-|C{0.07\hsize}
+C{0.07\hsize}
 |C{0.11\hsize}
 |C{0.07\hsize}
 |C{0.11\hsize}
 |C{0.07\hsize}
 |C{0.11\hsize}
 |C{0.15\hsize}
-|C{0.15\hsize}|
+|C{0.15\hsize}
 }
+\caption{#1}
+\label{#3}
+\\
     \hline
         \multirow{2}{*}{\textbf{ID}} &
         \multirow{2}{*}{\textbf{Épico}} &
         \multirow{2}{*}{\textbf{ID}} &
         \multirow{2}{*}{\textbf{Feature}} &
         \multirow{2}{*}{\textbf{ID}} &
-       \multicolumn{3}{c|}{\textbf{História de Usuário}} \\
+       \multicolumn{3}{c}{\textbf{História de Usuário}} \\
     \cline{6-8}
         &
         &
@@ -39,10 +42,9 @@
         \textbf{Quem?} &
         \textbf{O que?} &
         \textbf{Por quê?}
-    #3
+    #4
     \\ \hline
-\caption{#1}
-\label{#2}
+\caption*{#2}
 \end{longtable}
 }{
 \useportrait%
