@@ -1,6 +1,6 @@
 \chapter[Introdução]{Introdução}
 
-Neste capítulo, pretende-se contextualizar a pesquisa a ser realizada neste trabalho, sendo a mesma focada na Engenharia de Requisitos e seus processos (seção \ref{ref:contextualizacao}). Dentro deste contexto, é apresentado, primeiramente, a problemática no domínio da Engenharia de Requisitos (seção \ref{ref:problematica}), seguido pelas questões de pesquisa que norteiam a revisão da literatura, bem como pretendem ser respondidas ao final do trabalho (seção \ref{ref:questao_pesquisa}), continuando com os principais objetivos a serem atingidos ao longo da pesquisa (\ref{ref:objetivos}) e, por fim, a organização da monografia (seção \ref{ref:organizacao}).
+Neste capítulo, contextualizaremos a pesquisa realizada neste trabalho, sendo a mesma focada na Engenharia de Requisitos e seus processos. A partir da contextualização (seção \ref{ref:contextualizacao}), será apresentada uma problemática (seção \ref{ref:problematica}) no domínio da Engenharia de Requisitos. A partir da problemática, serão apresentadas as questões de pesquisa (seção \ref{ref:questao_pesquisa}) que norteiam a revisão da literatura, respondidas ao final do trabalho. Adicionalmente, são descritos os principais objetivos (\ref{ref:objetivos}) atingidos ao longo da pesquisa. Por fim, tem-se a organização desta monografia (seção \ref{ref:organizacao}).
 
 \label{chap:intro}
 
@@ -19,7 +19,7 @@ A elicitação, a modelagem e a análise (verificação e validação) são proc
     
 Um dos grandes casos estudados na área de Engenharia de Requisitos é o sistema de \textit{software} desenvolvido para a automatização do Serviço de Ambulância de Londres (SAL). Este serviço tinha uma taxa de 2000 a 2500 ligações diárias, com uma frota de 750 veículos e área coberta de cerca de 1600 km². Foi operado manualmente até o ano de 1987, quando o sistema foi posto em funcionamento \cite{LodonFiasco}.
 
-O sistema ficou em operação por menos de 10 dias, e se mostrou totalmente ineficiente para as demandas do serviço que propunha automatizar. Foi causa da morte de, cerca de 30 pessoas; gerou um prejuízo em torno de £1.5 milhões; casou a resignação do chefe executivo do SAL; instaurou um inquérito na equipe que desenvolveu o produto, e deixou em voga a responsabilização ética para profissionais de TI, bem como para outras áreas, dentre elas: direito e medicina \cite{LodonFiasco}.
+O sistema ficou em operação por menos de 10 dias, e se mostrou totalmente ineficiente para as demandas do serviço que propunha automatizar. Foi causa da morte de cerca de 30 pessoas; gerou um prejuízo em torno de £1.5 milhões; casou a resignação do chefe executivo do SAL; instaurou um inquérito na equipe que desenvolveu o produto, e deixou em voga a responsabilização ética para profissionais de TI, bem como para outras áreas, dentre elas: direito e medicina \cite{LodonFiasco}.
 
 Os principais pontos de erros levantados no trabalho de \cite{LodonFiasco}, considerando os problemas de elicitação do projeto, foram:
 
@@ -44,9 +44,9 @@ A partir do exposto, nota-se o quão importante é uma Engenharia de Requisitos 
 Para guiar as pequisas e o desenvolvimento deste estudo, foram definidas as seguintes indagações:
 
 \begin{enumerate}
-    \item Como pode ser automatizada a \textit{hiperlinkagem} para que os rastros das ideias não se percam no processo da Engenharia de Requisitos?;
-    \item Como prover uma \textit{interface} suficientemente satisfatória visando gerar uma versão preliminar do \textit{Minimum Viable Product} (MVP)?, e
-    \item Como proporcionar uma abordagem mais simples e minimalista para que os desenvolvedores possam realizar mais facilmente o processo da Engenharia de Requisitos?.
+    \item Como podemos desenvolver uma ferramenta que apoie o Engenheiro de Requisitos na sintetização de um produto de \textit{software} abstrato para um que seja concreto?;
+    \item Como podemos facilitar o desenvolvimento criativo do Engenheiro de Requisitos, de tal forma que a rastreabilidade das fontes dos requisitos sejam mantidas?, e
+    \item Tendo posse dos requisitos amadurecidos e sua importância para o produto de \textit{software}, como podemos correlacionar esses dados para gerar um possível \textit{Minimum Viable Product} (MVP)?.
 \end{enumerate}
 
 \section{Objetivos}
@@ -55,19 +55,23 @@ Para guiar as pequisas e o desenvolvimento deste estudo, foram definidas as segu
 
 \subsection{Objetivo Geral}
 
-Desenvolver uma ferramenta que viabilize automatizações e auxilie no processo de Engenharia de Requisitos, para embasar a construção de uma aplicação e mitigar retrabalhos e desperdícios de tempo. A ferramenta funcionará conferindo ênfase nas etapas da Engenharia de Requisitos, de forma que, uma vez concluída uma etapa, a próxima é desbloqueada, permitindo que o usuário volte em etapas anteriores para que haja um refinamento da mesma.
+Desenvolver uma ferramenta que viabilize automatizações e auxilie no processo de Engenharia de Requisitos, para embasar a construção de uma aplicação e mitigar retrabalhos e desperdícios de tempo. A ferramenta funciona conferindo ênfase nas etapas da Engenharia de Requisitos, de forma que, uma vez concluída uma etapa, a próxima é desbloqueada, permitindo que o usuário volte em etapas anteriores para que haja um refinamento da mesma.
 
 \subsection{Objetivos Específicos}
 
+\label{sec:objetivos_especificos}
+
+No intuito de cumprir com o objetivo geral deste trabalho, foram planejados e concluídos os seguintes objetivos específicos:
+
 \begin{enumerate}
-    \item \label{oe_hiperlinkagem} Desenvolver uma ferramenta que automatize a \textit{hiperlinkagem} entre os artefatos de requisitos;
-    \item \label{oe_mvp} Evoluir a ferramenta para que a mesma viabilize a geração do MVP (versão preliminar) com base nos artefatos gerados;
+    \item \label{oe_hiperlinkagem} Automatizar a \textit{hiperlinkagem} entre os artefatos de requisitos;
+    \item \label{oe_mvp} Viabilizar a geração do MVP (versão preliminar) com base nos artefatos gerados;
     \item \label{oe_guiar_usuario} Prover uma \textit{interface} para a ferramenta que guie o usuário no processo de criação de alguns artefatos de requisitos pré-definidos;
     \item \label{oe_ux_facilitada} Viabilizar a criação da \textit{interface}, mencionada no item anterior, de modo a proporcionar uma experiência de usuário satisfatória, visando facilitar o processo da Engenharia de Requisitos, e
     \item \label{oe_resultados} Realizar uma primeira análise dos resultados obtidos, usando como base uma amostra do público alvo.
 \end{enumerate}
 
-Adicionalmente aos objetivos específicos listados, pretende-se embasar a pesquisa considerando a literatura especializada, bem como conduzir a pesquisa orientando-se por uma metodologia adequada. Portanto, são realizadas atividade de levantamento bibliográfico e definição de uma metodologia, ambas acordadas no Capítulo de Metodologia (Capítulo \ref{chap:metodologia}).
+Adicionalmente aos objetivos específicos listados, embasou-se a pesquisa considerando a literatura especializada, bem como se conduziu a pesquisa orientando-se por uma metodologia adequada. Portanto, foram realizadas atividade de levantamento bibliográfico e definição de uma metodologia, ambas acordadas no Capítulo de Metodologia (Capítulo \ref{chap:metodologia}).
 
 
 \section{Organização da Monografia}
@@ -78,8 +82,9 @@ A monografia está estruturada conforme os seguintes capítulos:
 
 \begin{itemize}
     \item Capítulo \ref{chap:embasamento_teorico} - Embasamento Teórico: apresenta o que foi encontrado na literatura, no que permeia e oferece apoio, em termos conceituais, ao tema do trabalho;
-    \item Capitulo \ref{chap:referencial_tecnologico} - Referencial Tecnológico: descreve as tecnologias que estão sendo utilizadas para o desenvolvimento do trabalho na totalidade;
-    \item Capítulo \ref{chap:metodologia} - Metodologia: define como será realizada a condução do trabalho, desde a pesquisa, até a construção da ferramenta e a análise dos resultados;
-    \item Capítulo \ref{chap:proposta} - Proposta: acorda outros detalhes, inerentes à proposta deste trabalho, revelando definições, arquitetura, protótipo, além de um esboço inicial do \textit{backlog}\footnote{O termo é explicado na seção \ref{sec:backlog} deste trabalho} do produto, e
-    \item Capítulo \ref{chap:consideracoes_finais} - Considerações Finais: apresenta os principais resultados obtidos nesse primeiro momento do desenvolvimento do trabalho.
+    \item Capitulo \ref{chap:referencial_tecnologico} - Referencial Tecnológico: descreve as tecnologias que foram utilizadas para o desenvolvimento do trabalho na totalidade;
+    \item Capítulo \ref{chap:metodologia} - Metodologia: define como foi realizada a condução do trabalho, desde a pesquisa, até a construção da ferramenta e a análise dos resultados;
+    \item Capítulo \ref{chap:proposta} - \textit{iFlow}: descreve o produto final deste trabalho, no caso, a ferramenta \textit{iFlow}, que consiste em gerar um Produto Mínimo Viável, definindo sua estrutura e dispondo de artefatos e provas de conceito;  
+    \item Capítulo \ref{chap:analise_resultados} - Análise de Resultados: apresenta a análise de resultados coletados durante o desenvolvimento do trabalho, sendo esses analisados, e
+    \item Capítulo \ref{chap:consideracoes_finais} - Conclusão: apresenta as considerações finais deste projeto, bem como propostas para trabalhos futuros.
 \end{itemize}

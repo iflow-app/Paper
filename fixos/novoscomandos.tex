@@ -1,5 +1,6 @@
 \newcommand{\curso}[1]{\def\imprimircurso{#1}}
 
+
 \newcommand{\palavraChaveUm}[1]{\def\imprimirpalavrachaveum{#1}}
 \newcommand{\palavraChaveDois}[1]{\def\imprimirpalavrachavedois{#1}}
 
@@ -9,10 +10,12 @@
 \newcommand{\membroConvidadoUm}[1]{\def\imprimirmembroconvidadoum{#1}}
 \newcommand{\membroConvidadoDois}[1]{\def\imprimirmembroconvidadodois{#1}}
 
+\addto\captionsbrazil{\renewcommand\lstlistingname{Lista de Códigos}}
+\addto\captionsbrazil{\renewcommand\lstlistlistingname{Lista de Códigos}}
+
 \addto\captionsbrazil{\renewcommand{\listfigurename}{Lista de Ilustrações}}
 \addto\captionsbrazil{\renewcommand{\listtablename}{Lista de Tabelas}}
 \addto\captionsbrazil{\renewcommand{\listadesiglasname}{Lista de Abreviaturas e Siglas}}
-
 
 \newcommand\BackgroundPic{%
 \put(0,0){%
@@ -73,3 +76,4 @@ keepaspectratio]{figuras/capa.pdf}%
   \end{capa}
 }
 
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
