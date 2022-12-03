@@ -2,7 +2,7 @@
 
 \label{chap:embasamento_teorico}
 
-Neste capítulo, são apresentados os principais conceitos utilizados para embasamento da ferramenta desenvolvida, sendo essa focada na Engenharia de Requisitos e suas principais atividades/etapas. Primeiramente, terá uma seção descrevendo, de forma mais conceitual e abrangente, a Engenharia de Requisitos (seção \ref{sec:eng_requisitos_ex}). Logo em seguida, será apresentado o tópico de Rastreabilidade (seção \ref{sec:rastreabilidade}), definindo conceitos importantes no domínio da Engenharia de Requisitos. Serão apresentadas as técnicas referentes ao tópico de Elicitação (seção \ref{sec:elicitacao}). Adicionalmente, será apresentada uma seção sobre Modelagem (seção \ref{sec:modelagem}), definindo os principais modelos para a ferramenta. Posteriormente, têm-se os tópicos de Verificação (seção \ref{sec:verificacao}) e Priorização (seção \ref{sec:priorizacao}). Logo em seguida, têm-se as definições de \textit{House of Quality} (seção \ref{sec:house_of_quality}), bem como as definições de Grafos, fundamentais para a ferramenta. Por fim, tem-se o resumo do capítulo (seção \ref{sec:resumo_embasamento}). Como há um vasto conjunto de conceitos, a Figura \ref{fig:roadmap} confere um roteiro de leitura, procurando auxiliar na compreensão do conteúdo exposto.
+Neste capítulo, são apresentados os principais conceitos utilizados para embasamento da ferramenta desenvolvida, sendo essa focada na Engenharia de Requisitos e suas principais atividades/etapas. Primeiramente, terá uma seção descrevendo, de forma mais conceitual e abrangente, a Engenharia de Requisitos (Seção \ref{sec:eng_requisitos_ex}). Logo em seguida, será apresentado o tópico de Rastreabilidade (Seção \ref{sec:rastreabilidade}), definindo conceitos importantes no domínio da Engenharia de Requisitos. Serão apresentadas as técnicas referentes ao tópico de Elicitação (Seção \ref{sec:elicitacao}). Adicionalmente, será apresentada uma seção sobre Modelagem (Seção \ref{sec:modelagem}), definindo os principais modelos para a ferramenta. Posteriormente, têm-se os tópicos de Verificação (Seção \ref{sec:verificacao}) e Priorização (Seção \ref{sec:priorizacao}). Logo em seguida, têm-se as definições de \textit{House of Quality} (Seção \ref{sec:house_of_quality}), bem como as definições de Grafos, fundamentais para a ferramenta. Por fim, tem-se o resumo do capítulo (Seção \ref{sec:resumo_embasamento}). Como há um vasto conjunto de conceitos, a Figura \ref{fig:roadmap} confere um roteiro de leitura, procurando auxiliar na compreensão do conteúdo exposto.
 
 \begin{figure}[]
     \begin{center}
@@ -18,17 +18,17 @@ A macro área de interesse deste trabalho é a Engenharia de \textit{Software}. 
 Nesse contexto, para a ferramenta desenvolvida, foram escolhidas algumas etapas de maior relevância para que se tenha um processo mais certeiro na elaboração de um novo produto de \textit{software} com qualidade e os artefatos (documentos) usados para tanto. São eles:
 
 \begin{itemize}
-    \item Pré-rastreabilidade: para viabilizar esta atividade, podem ser utilizados diferentes artefatos, sendo sugeridos, no contexto desse trabalho: \textit{Rich Picture} (seção \ref{sec:rich_picture}) e \textit{5W2H} (seção \ref{sec:5w2h}). Esta etapa viabiliza um olhar mais centrado no que tange o contexto de uma aplicação, permitindo esboçar as primeiras ideias em artefatos de cunho mais generalista, e livres de notação formal. Adicionalmente, permite manter um elo, por exemplo, para as fontes de informação;
+    \item Pré-rastreabilidade: para viabilizar esta atividade, podem ser utilizados diferentes artefatos, sendo sugeridos, no contexto desse trabalho: \textit{Rich Picture} (Seção \ref{sec:rich_picture}) e \textit{5W2H} (Seção \ref{sec:5w2h}). Esta etapa viabiliza um olhar mais centrado no que tange o contexto de uma aplicação, permitindo esboçar as primeiras ideias em artefatos de cunho mais generalista, e livres de notação formal. Adicionalmente, permite manter um elo, por exemplo, para as fontes de informação;
     
-    \item Elicitação: para condução desta atividade, há técnicas bem estabelecidas, tais como: \textit{Brainstorming} (seção \ref{sec:brainstorming}), Questionário (seção \ref{sec:questionario}), Prototipação (seção \ref{sec:prototipo-def}), \textit{Storytelling} (seção \ref{sec:storytelling}), Entrevista (seção \ref{sec:entrevista}) e Análise de Protocolo (seção \ref{sec:analise-protocolo}). Neste trabalho, são apresentadas breves definições sobre cada técnica. A partir das técnicas propostas, o principal objetivo é levantar as funcionalidades (requisitos funcionais e não funcionais) de uma aplicação de \textit{software};
+    \item Elicitação: para condução desta atividade, há técnicas bem estabelecidas, tais como: \textit{Brainstorming} (Seção \ref{sec:brainstorming}), Questionário (Seção \ref{sec:questionario}), Prototipação (Seção \ref{sec:prototipo-def}), \textit{Storytelling} (Seção \ref{sec:storytelling}), Entrevista (Seção \ref{sec:entrevista}) e Análise de Protocolo (Seção \ref{sec:analise-protocolo}). Neste trabalho, são apresentadas breves definições sobre cada técnica. A partir das técnicas propostas, o principal objetivo é levantar as funcionalidades (requisitos funcionais e não funcionais) de uma aplicação de \textit{software};
     
-    \item Modelagem: olhar mais centrado em fazer com que as ideias levantadas na etapa anterior tenham um aspecto mais maduro e que possam ser, de fato, implementado em código. Nesse contexto, existem vários níveis e propostas de modelagem. Entretanto, há ênfase em alguns artefatos, os quais corroboram com a modelagem em diferentes aspectos de um \textit{software}. O \textit{Backlog} do Produto (seção \ref{sec:backlog}) permite especificar os requisitos funcionais de um \textit{software}, sendo um artefato muito conhecido e orientado às metodologias ágeis. O \textit{Softgoal Interdependence Graph} (SIG) compreende uma modelagem centrada em requisitos não funcionais, sendo proposta em um \textit{framework} conceitual conhecido como NFR \textit{Framework} (seção \ref{sec:nfr}). Além disso, os Léxicos (seção \ref{sec:lexicos}) são relevantes para compreensão dos principais termos de um produto de \textit{software}, sejam esses de cunho mais técnico ou de um domínio particular;
+    \item Modelagem: olhar mais centrado em fazer com que as ideias levantadas na etapa anterior tenham um aspecto mais maduro e que possam ser, de fato, implementado em código. Nesse contexto, existem vários níveis e propostas de modelagem. Entretanto, há ênfase em alguns artefatos, os quais corroboram com a modelagem em diferentes aspectos de um \textit{software}. O \textit{Backlog} do Produto (Seção \ref{sec:backlog}) permite especificar os requisitos funcionais de um \textit{software}, sendo um artefato muito conhecido e orientado às metodologias ágeis. O \textit{Softgoal Interdependence Graph} (SIG) compreende uma modelagem centrada em requisitos não funcionais, sendo proposta em um \textit{framework} conceitual conhecido como NFR \textit{Framework} (Seção \ref{sec:nfr}). Além disso, os Léxicos (Seção \ref{sec:lexicos}) são relevantes para compreensão dos principais termos de um produto de \textit{software}, sejam esses de cunho mais técnico ou de um domínio particular;
     
-    \item Verificação: Para realização desta atividade, deve-se ter em mente as práticas de Verificação e Validação (seção \ref{sec:verificacao}). Esta etapa visa encontrar erros e inconsistências nos modelos e requisitos levantados;
+    \item Verificação: Para realização desta atividade, deve-se ter em mente as práticas de Verificação e Validação (Seção \ref{sec:verificacao}). Esta etapa visa encontrar erros e inconsistências nos modelos e requisitos levantados;
     
     \item Pós-rastreabilidade: O olhar desta atividade concentra-se em manter elos entre requisitos e artefatos de níveis mais baixos de abstração (Arquitetura e Código). Nesse ponto, o principal objetivo, é prover um rastro do requisito desde a sua primeira concepção, e
     
-    \item Priorização/\textit{House of Quality} (seção \ref{sec:priorizacao} e \ref{sec:house_of_quality}): etapa que visa definir qual a ordem que os requisitos devem ser implementados, que gere maior valor para os seus \textit{Stakeholders}. Acorda uma modelagem gráfica, que tem em vista correlacionar as preocupações entre diferentes \textit{Stakeholders}, sendo muito útil para lidar com interesses conflitantes e visualizar as funcionalidades que são mais relevantes, dados os aspectos qualitativos (requisitos não funcionais) do \textit{software}.
+    \item Priorização/\textit{House of Quality} (Seção \ref{sec:priorizacao} e \ref{sec:house_of_quality}): etapa que visa definir qual a ordem que os requisitos devem ser implementados, que gere maior valor para os seus \textit{Stakeholders}. Acorda uma modelagem gráfica, que tem em vista correlacionar as preocupações entre diferentes \textit{Stakeholders}, sendo muito útil para lidar com interesses conflitantes e visualizar as funcionalidades que são mais relevantes, dados os aspectos qualitativos (requisitos não funcionais) do \textit{software}.
     
 \end{itemize}
 
@@ -40,10 +40,10 @@ Diante da necessidade de se prover um MVP, e orientando-se pelas etapas e artefa
 
 \label{sec:eng_requisitos_ex}
 
-Por se tratar de uma área que se encontra entre o abstrato e o concreto, \citeauthoronline{westfall_5w2h}(\citeyear{westfall_5w2h}), em seu estudo, define os diferentes porquês da existência da Engenharia de Requisitos, sendo:
+Por se tratar de uma área que se encontra entre o abstrato e o concreto, \citeonline{westfall_5w2h}, em seu estudo, define os diferentes porquês da existência da Engenharia de Requisitos, sendo:
 
 \begin{itemize}
-    \item O que é?: são os requisitos responsáveis pela definição do que o \textit{software} deve realizar (\textit{requisitos funcionais}\footnote{Declarações de serviços que o sistema deve prover, como tem que reagir para entradas e como precisa se comportar em situações especificas \cite{Sommerville10}.}) e possuir (\textit{requisitos não funcionais}\footnote{Restrições aos serviços ou funções oferecidas pelo sistema. Aplicam-se ao sistema na totalidade \cite{Sommerville10}.}) para agregar valor para os seus \textit{stakeholders}\footnote{Grupo de pessoas interessadas no produto, podendo ser cliente, usuários etc.}; Existem vários níveis e categorias de requisitos, mostrados na Figura \ref{lev_tipo_req}:
+    \item O que é?: são os requisitos responsáveis pela definição do que o \textit{software} deve realizar (\textit{requisitos funcionais}\footnote{Declarações de serviços que o sistema deve prover, como tem que reagir para entradas e como precisa se comportar em situações especificas \cite{Sommerville10}.}) e possuir (\textit{requisitos não funcionais}\footnote{Restrições aos serviços ou funções oferecidas pelo sistema. Aplicam-se ao sistema na totalidade \cite{Sommerville10}.}) para agregar valor para os seus \textit{stakeholders}\footnote{Grupo de pessoas interessadas no produto, podendo ser cliente, usuários etc.}; Existem vários níveis e categorias de requisitos, mostrados na Figura \ref{lev_tipo_req}.
     
     \begin{figure}[htb]
         \begin{center}
@@ -139,13 +139,13 @@ A Pré-rastreabilidade preocupa-se, objetivamente, em rastrear um requisito até
     \item Quanto custa?: quanto custa para executar a ação.
 \end{itemize}
 
-A Tabela \ref{quadro:5w2h_ex} ilustra um exemplo de 5W2H realizado para a aplicação \href{https://unbarqdsw.github.io/2020.1_G13_iGado/#/}{\textit{iGado}} que tem o objetivo de facilitar o gerenciamento rural de forma que o proprietário possa ter um controle sobre os dados dos seus bovinos. Ressalta-se que como esse artefato permite rastros para vários aspectos relevantes do \textit{software}, incluindo \textit{Stakeholders}, fontes, funcionalidades, dentre outras, há pré-rastreabilidade anotada.
+A Tabela \ref{quadro:5w2h_ex} ilustra um exemplo de 5W2H, realizado para a aplicação \textit{iGado} (\citeonline{quadro_igado}), que tem o objetivo de facilitar o gerenciamento rural de forma que o proprietário possa ter um controle sobre os dados dos seus bovinos. Ressalta-se que como esse artefato permite rastros para vários aspectos relevantes do \textit{software}, incluindo \textit{Stakeholders}, fontes, funcionalidades, dentre outras, há pré-rastreabilidade anotada.
 
-\begin{table}
+\begin{quadro}
 \caption{5W2H do Aplicativo iGado}
 \label{quadro:5w2h_ex}
 \centering
-\begin{tabular}{C{0.07\textheight}|C{0.55\textheight}}
+\begin{tabular}{C{0.07\textheight}|p{0.55\textheight}}
     \hline
     O quê? & Um aplicativo para o gerenciamento e gestão da pecuária.\\ \hline
     Por quê? & Atualmente, no mercado, tem-se uma escassez de aplicativos para a gestão da pecuária. Além disso, muitos proprietários de fazenda ainda utilizam ferramentas arcaicas, como papel e caneta, para o gerenciamento da fazenda e, principalmente, da pecuária. \\ \hline
@@ -156,13 +156,13 @@ A Tabela \ref{quadro:5w2h_ex} ilustra um exemplo de 5W2H realizado para a aplica
      Quanto Custa? & ~ R\$ 226.551,64 \\ \hline
 \end{tabular}
 \legend{Fonte: Autores, 2022.}
-\end{table}
+\end{quadro}
 
 \subsubsection{\textit{Rich Picture}}
 
 \label{sec:rich_picture}
 
-\textit{Rich Picture} é uma ilustração que se assemelha a um desenho, visando identificar as partes interessadas, suas preocupações e partes subjacentes. É uma ferramenta para registrar e raciocinar sobre os aspectos do contexto de trabalho e como eles afetam o produto  \cite{10.1145/274430.274434}. Além disso, ela se baseia em rascunhar desenhos e usar textos curtos e objetivos para expressar um momento, um desejo, uma atividade, dentre outras necessidades. A Figura \ref{fig:rich_picture} ilustra um exemplo de \textit{Rich Picture} no contexto de uma aplicação cujo foco é conectar prestadores de serviços aos seus possíveis clientes. Cabe ressaltar que esse artefato, por revelar fontes de informação (ex. Leis e Termos de Uso); \textit{Stakeholders} (ex. Prestador de Serviços e Usuário), fluxos de atividades (ex. Prestador de Serviços aceita Termos de Uso), dentre outras informações do Universo de Informações \cite{leite2007livro}, permite conferir pré-rastreabilidade.
+\textit{Rich Picture} é uma ilustração que visa identificar as partes interessadas(\textit{stakeholders}), suas preocupações e partes subjacentes. É uma ferramenta para registrar e raciocinar sobre os aspectos do contexto de trabalho e como eles afetam o produto  \cite{10.1145/274430.274434}. Além disso, ela se baseia em rascunhar desenhos e usar textos curtos e objetivos para expressar um momento, um desejo, uma atividade, dentre outras necessidades. A Figura \ref{fig:rich_picture}, desenvolvido para a aplicação \textit{Pax} (\citeonline{pax_app}), ilustra um exemplo de \textit{Rich Picture} no contexto de uma aplicação cujo foco é conectar prestadores de serviços aos seus possíveis clientes. Cabe ressaltar que esse artefato, por revelar fontes de informação (ex. Leis e Termos de Uso); \textit{Stakeholders} (ex. Prestador de Serviços e Usuário), fluxos de atividades (ex. Prestador de Serviços aceita Termos de Uso), dentre outras informações do Universo de Informações \cite{leite2007livro}, permite conferir pré-rastreabilidade.
 
 \begin{figure}[htb]
     \begin{center}
@@ -195,7 +195,7 @@ O \textit{Brainstorming} ou “Tempestade de Ideias”, por ser uma técnica de 
 
 O \textit{Brainstorming} é usado para gerar novas ideias, deixando a mente livre para aceitar todas as ideias sugeridas e, assim, permitir a liberdade para a criatividade \cite{batista2003taxonomia}. Uma dificuldade é documentar um \textit{Brainstorming}. Entretanto, pode-se usar desde gravações em vídeos e áudios, e até mesmo Mapas Mentais e outros modelos que permitem rápidas anotações.
 
-A Figura \ref{fig:mind_map} mostra um \href{https://unbarqdsw.github.io/2020.1_G13_iGado/#/docs/Product/MindMap}{Mapa Mental}, especificado a partir de um debate no contexto de elicitação de um \textit{software} no domínio de uma aplicação \textit{mobile}, que visa facilitar o gerenciamento rural de proprietários de fazendas, em que a equipe usava a técnica de \textit{Brainstorming}.
+A Figura \ref{fig:mind_map}, desenvolvida para a aplicação \textit{iGado} (\citeonline{quadro_igado}), mostra um \textit{Mapa Mental}, especificado a partir de um debate no contexto de elicitação de um \textit{software} no domínio de uma aplicação \textit{mobile}, que visa facilitar o gerenciamento rural de proprietários de fazendas, em que a equipe usava a técnica de \textit{Brainstorming}.
 
 \begin{figure}[H]
     \begin{center}
@@ -212,11 +212,11 @@ A Figura \ref{fig:mind_map} mostra um \href{https://unbarqdsw.github.io/2020.1_G
 
 O Questionário é uma técnica de coleta de informações que permite aos envolvidos no projeto estudar atitudes, crenças, comportamentos e características do público alvo que podem ser afetados pelo sistema atual e pelo sistema proposto \cite{kendall1992systems}. Deve ser realizada com muita cautela. A elaboração das perguntas, que vão constituir o questionário, é um processo engenhoso, complexo e delicado. Um questionário mal elaborado pode, facilmente, levar a conclusões errôneas, que acabam sendo prejudiciais para o projeto que está sendo desenvolvido \cite{bastosjunior}.
 
-De acordo com \cite{segundo2017custom}, um questionário deve ser elaborado tendo em mente alguns aspectos-chave, dentre eles: 
+De acordo com \citeonline{segundo2017custom}, um questionário deve ser elaborado tendo em mente alguns aspectos-chave, dentre eles: 
 
 \begin{enumerate}
     \item Coleta de informações sobre o perfil dos participantes; 
-    \item A informação que se quer descobrir, onde devem ser consideradas, primeiramente, uma mensagem  introdutória, direcionando o participante sobre o questionamento, seja essa de múltipla escolha ou mais discursiva, e
+    \item A informação que se quer descobrir, onde devem ser considerada, primeiramente, uma mensagem  introdutória, direcionando o participante sobre o questionamento, seja essa de múltipla escolha ou mais discursiva, e
     \item Análise dos resultados obtidos, procurando apresentá-los usando gráficos, tabelas, e quadros bem claros e objetivos, com base, preferencialmente, em diferentes pontos de vista.
 \end{enumerate}
 
@@ -224,7 +224,7 @@ De acordo com \cite{segundo2017custom}, um questionário deve ser elaborado tend
 
 \label{sec:prototipo-def}
 
-Um Protótipo, segundo \cite{Sommerville10}, “é uma versão inicial de um sistema de \textit{software}, usado para demonstrar conceitos, experimentar opções de projeto e descobrir mais sobre o problema e suas possíveis soluções”. É muito significativo no processo de Engenharia de Requisitos pelo fato de ajudar na elicitação dos requisitos de \textit{software}, e para estudar soluções específicas do \textit{software}.
+Um Protótipo, segundo \citeonline{Sommerville10}, “é uma versão inicial de um sistema de \textit{software}, usado para demonstrar conceitos, experimentar opções de projeto e descobrir mais sobre o problema e suas possíveis soluções”. É muito significativo no processo de Engenharia de Requisitos pelo fato de ajudar na elicitação dos requisitos de \textit{software}, e para estudar soluções específicas do \textit{software}.
 
 \subsection{\textit{Storytelling}}
 
@@ -238,7 +238,7 @@ O próprio cérebro humano, segundo estudos, é mais propenso ao aprendizado pro
 
 \label{sec:entrevista}
 
-Entrevista é uma das técnicas mais utilizadas por possuir uma comunicação mais natural entre as pessoas. As entrevistas são usadas para a obtenção de conhecimento sobre um determinado tema/domínio, por perguntas feitas aos usuários especialistas, além de trazer muitas informações aos desenvolvedores do projeto \cite{batista2003taxonomia}. De acordo com \cite{Sommerville10}, elas podem ser de dois tipos:
+Entrevista é uma das técnicas mais utilizadas por possuir uma comunicação mais natural entre as pessoas. As entrevistas são usadas para a obtenção de conhecimento sobre um determinado tema/domínio, por perguntas feitas aos usuários especialistas, além de trazer muitas informações aos desenvolvedores do projeto \cite{batista2003taxonomia}. De acordo com \citeonline{Sommerville10}, elas podem ser de dois tipos:
 \begin{itemize}
     \item Fechadas: seguem um conjunto de perguntas pré-definidas, e
     \item Abertas: não se tem uma agenda pré-definida.
@@ -255,7 +255,7 @@ A Análise de Protocolo consiste em pedir a uma pessoa para que ela se envolva e
 
 \label{sec:modelagem}
 
-Esta parte do processo da Engenharia de Requisitos consiste em estruturar os requisitos levantados no período da elicitação(\ref{sec:elicitacao}) de forma sistemática. De acordo com \cite{Sommerville10}, os requisitos “devem ser claros, inequívocos, fáceis de entender, completos e consistentes”.
+Esta parte do processo da Engenharia de Requisitos consiste em estruturar os requisitos levantados no período da elicitação (Seção \ref{sec:elicitacao}) de forma sistemática. De acordo com \citeonline{Sommerville10}, os requisitos “devem ser claros, inequívocos, fáceis de entender, completos e consistentes”.
 
 Vale mencionar que os documentos gerados, nesta fase, devem ser de fácil entendimento para os \textit{stakeholders} do projeto, sem existirem detalhes técnicos de implementação ou arquitetura do sistema \cite{Sommerville10}.
 
@@ -273,7 +273,7 @@ Dentro desta construção, \citeauthoronline{carolipaulo2021} (\citeyear{carolip
     \item \label{tp:us} \textbf{História de Usuário}: é uma função da \textit{feature}, e está associado a ela. Objetivamente, equivale aos requisitos funcionais de uma \textit{interface}. Além disso, trata-se de uma pequena parte da funcionalidade que faz sentido para os \textit{stakeholders}.
 \end{enumerate}
 
-Dessa forma, foi construído o \textit{backlog} da ferramenta proposta, podendo ser observado no apêndice \ref{ap:backlog}.
+Dessa forma, foi construído o \textit{backlog} da ferramenta proposta, podendo ser observado no Apêndice \ref{ap:backlog}.
 
 \subsection{NFR}
 
@@ -281,9 +281,9 @@ Dessa forma, foi construído o \textit{backlog} da ferramenta proposta, podendo 
 
 O NFR \textit{Framework} (\textit{Non-Functional Requirements}) é um artefato que visa tratar os requisitos não funcionais, expressando-os sistematicamente, e usando-os para guiar o processo de desenvolvimento do \textit{software}.
 
-Segundo \cite{coutoproposta}, trata-se de uma abordagem que confere operacionalizações, considerando os requisitos não funcionais. Esses requisitos são especificados como metas a serem atingidas. Já as operacionalizações são vistas como ações concretas, que uma vez realizadas, colaboraram com o cumprimento das metas a serem atingidas.
+Segundo \citeonline{coutoproposta}, trata-se de uma abordagem que confere operacionalizações, considerando os requisitos não funcionais. Esses requisitos são especificados como metas a serem atingidas. Já as operacionalizações são vistas como ações concretas, que uma vez realizadas, colaboraram com o cumprimento das metas a serem atingidas.
 
-Além disso, de acordo com \cite{chung2012non}, o “NFR \textit{Framework} usa os requisitos não funcionais como segurança, precisão, desempenho e custo para conduzir o processo geral de \textit{design}. O Framework visa colocar os requisitos não funcionais em primeiro lugar na mente do desenvolvedor”. A Figura \ref{fig:nfr_original} ilustra a mesma modelagem, em seu rigor de notação.
+Além disso, de acordo com \citeonline{chung2012non}, o “NFR \textit{Framework} usa os requisitos não funcionais como segurança, precisão, desempenho e custo para conduzir o processo geral de \textit{design}. O Framework visa colocar os requisitos não funcionais em primeiro lugar na mente do desenvolvedor”. A Figura \ref{fig:nfr_original} ilustra a mesma modelagem, em seu rigor de notação.
 
 \begin{figure}[H]
     \begin{center}
@@ -295,7 +295,7 @@ Além disso, de acordo com \cite{chung2012non}, o “NFR \textit{Framework} usa 
 \end{figure}
 
 
-A intenção do presente trabalho foi usar os princípios desse modelo conceitual, visando um tratamento mais adequado dos requisitos não funcionais. Não foi utilizada a notação, em seu rigor. Entretanto, foi utilizado um processo guiado, orientando-se por esse modelo conceitual, e procurando facilitar o processo de modelagem dos requisitos não funcionais por parte dos usuários da ferramenta. Dessa forma, o NFR foi utilizado para definir os requisitos não funcionais de forma mais lapidada, ou seja, no seu segundo e/ou terceiro nível. Sendo assim, os requisitos não funcionais, na sua forma de operacionalização, foram modelados no \textit{House of Quality} (seção \ref{sec:house_of_quality}).
+A intenção do presente trabalho foi usar os princípios desse modelo conceitual, visando um tratamento mais adequado dos requisitos não funcionais. Não foi utilizada a notação, em seu rigor. Entretanto, foi utilizado um processo guiado, orientando-se por esse modelo conceitual, e procurando facilitar o processo de modelagem dos requisitos não funcionais por parte dos usuários da ferramenta. Dessa forma, o NFR foi utilizado para definir os requisitos não funcionais de forma mais lapidada, ou seja, no seu segundo e/ou terceiro nível. Sendo assim, os requisitos não funcionais, na sua forma de operacionalização, foram modelados no \textit{House of Quality} (Seção \ref{sec:house_of_quality}).
 
 A Figura \ref{fig:nfr_example} ilustra a adaptação usada na ferramenta, elaborada pelos autores, e orientada pelos princípios do NFR \textit{Framework}. O intuito é ser uma notação mais simples e compreensível aos usuários da ferramenta.
 
@@ -323,10 +323,10 @@ O Léxico é definido como um conjunto de vocábulos de uma língua, dispostos e
 
 Considerando um \textit{software} no domínio de um aplicativo \textit{mobile}, denominado Pró-Espécies Peixes, com a finalidade de aumentar a quantidade de informações disponíveis sobre as espécies de peixes no cerrado brasileiro, tem-se um exemplo de especificação de léxico, Tabela \ref{tab:lexico}, para o termo \textbf{Georreferência}, sendo esse do tipo \textbf{Objeto}.
 
-\begin{table}[H]
-\caption{Léxico (Objeto)}
+\begin{quadro}[H]
+\caption{Exemplo de léxico (Objeto)}
 \centering
-\begin{tabular}{C{0.15\textheight}|C{0.45\textheight}}
+\begin{tabular}{L{0.15\textheight}|L{0.45\textheight}}
     \hline
     Nome & Georreferência \\ \hline
     Classificação & Objeto  \\ \hline
@@ -336,15 +336,15 @@ Considerando um \textit{software} no domínio de um aplicativo \textit{mobile}, 
 \end{tabular}
 \legend{Fonte: Autores, 2022.}
 \label{tab:lexico}
-\end{table}
+\end{quadro}
 
 \section {Verificação}
 
 \label{sec:verificacao}
 
-Verificação consiste em uma etapa rigorosa do processo da Engenharia de Requisitos, onde os artefatos gerados na modelagem (seção \ref{sec:modelagem}) são revisados. Essa etapa é essencial, pois no contexto do desenvolvimento de um \textit{software}, uma refatoração é mais custosa que a inspeção de um artefato previamente à implementação. São usadas diversas técnicas nesta etapa \cite{verification}, a depender da necessidade.
+Verificação consiste em uma etapa rigorosa do processo da Engenharia de Requisitos, onde os artefatos gerados na modelagem (Seção \ref{sec:modelagem}) são revisados. Essa etapa é essencial, pois no contexto do desenvolvimento de um \textit{software}, uma refatoração é mais custosa que a inspeção de um artefato previamente à implementação. São usadas diversas técnicas nesta etapa \cite{verification}, a depender da necessidade.
 
-Nesse contexto, cabe uma ressalta. A etapa de análise, inerente na Engenharia de Requistos, envolve, principalmente, duas sub-atividades, sendo: Verificação e Validação. A verificação compreende analisar  se o \textit{software} está correto, conforme foi especificado/planejado/modelado. Já a validação analisa se o \textit{software}, obtido até o momento da análise, atende às expectativas do cliente.
+Nesse contexto, cabe uma ressalva. A etapa de análise, inerente na Engenharia de Requistos, envolve, principalmente, duas sub-atividades, sendo: Verificação e Validação. A verificação compreende analisar  se o \textit{software} está correto, conforme foi especificado/planejado/modelado. Já a validação analisa se o \textit{software}, obtido até o momento da análise, atende às expectativas do cliente.
 
 É possível perceber que a validação é mais complicada de ser realizada, na Engenharia de Requisitos, visto que, nesta etapa do ciclo de vida, não há um incremento de \textit{software} avançado, tampouco um produto concluído. Quando muito, tem-se um protótipo ou um incremento de \textit{software} tido como uma prova de conceito. Portanto, costuma-se validar esse protótipo ou essa prova de conceito usando um grupo mais específico de \textit{Stakeholders}.
 
@@ -356,17 +356,19 @@ Em contrapartida, a verificação é comumente realizada na Engenharia de Requis
 
 O MVP (\textit{Minimum Viable Product}) é definido como a versão mais simples de um produto que pode ser colocado para negociação. Determina quais são as funcionalidades mais importantes e que agregam mais valor ao produto para ele ser validado e efetivado pelo usuário final \cite{carolipaulo2018}. Faz-se uso deste conceito, no sentido da ferramenta elaborada auxiliar os Engenheiros de \textit{Software} na obtenção de um MVP, sendo esse orientado pelas boas práticas da Engenharia de Requisitos, mitigando problemas, mencionados no Capítulo \ref{chap:intro}.
 
+Além disso, o MVP é usado para validar o retorno de determinado investimento, mesmo antes de o produto estar completamente finalizado, trazendo uma versão mais "enxuta", mas que, no entanto, já é suficiente para resolver o problema para o qual foi desenvolvido.
+
 \section{\textit{House of Quality}}
 
 \label{sec:house_of_quality}
 
 \textit{House of Quality} ou Casa da Qualidade é um processo de planejamento sistemático, elaborado para compreender de forma explícita a “voz do cliente” no \textit{design} do produto. Esta pode ser vista como uma ferramenta gráfica para compreender e avaliar a relação entre as preocupações do cliente e as do desenvolvedor \cite{Howard_1}, conforme consta na Figura \ref{fig:hoq}.
 
-\begin{figure}[H]
+\begin{figure}[]
     \begin{center}
-        \caption{HOQ do Aplicativo Habitica}
+        \caption{\textit{House of Quality} do Aplicativo Habitica}
         \label{fig:hoq}
-        \includegraphics[scale=0.45]{figuras/referencial_teorico/HOQ.jpg}
+        \includegraphics[scale=0.58]{figuras/referencial_teorico/HOQ.jpg}
         \legend{Fonte: Autores, 2022.}
     \end{center}
 \end{figure}
@@ -384,9 +386,7 @@ Trata-se de um artefato composto por cinco partes, sendo elas:
 \subsection{Grafos}
 
 \label{sec:grafos}
-Grafo é um ramo da matemática que estuda as relações entre os objetos de um determinado conjunto. Portanto, G(V, E) é a notação que representa um Grafo, onde "V" é um conjunto de objetos denominados Vértices e "E" o conjunto de Arestas, sendo um subconjunto de pares não ordenados de "V".
-
-Na computação, a lista de adjacências é uma das formas de representação de um Grafo, onde se têm as ligações de vértices e arestas com seus pesos respectivos. É uma maneira de codificar relações emparelhadas entre um conjunto de objetos. Consiste em uma coleção V de nós e uma coleção E de arestas, onde as arestas juntam dois nós \cite{Kleinberg+Tardos:06a}. A Figura \ref{grafo_1} mostra a representação de um Grafo com os vértices (A, B, C, D e E), suas respectivas arestas e os pesos (3, 5, 9, 2, 1, 1, 6).
+Grafo é um ramo da matemática que estuda as relações entre os objetos de um determinado conjunto. Portanto, um Grafo $G$ é definido por um conjunto $V(G)$ de elementos denominados Vértices; um conjunto $E(G)$ de elementos chamados Arestas, onde cada aresta associa um ou dois vértices. A Figura \ref{grafo_1} mostra a representação de um grafo com os vértices $(A, B, C, D, E)$, suas respectivas arestas e os pesos $(3, 5, 9, 2, 1, 1, 6)$.
 
 \begin{figure}[H]
     \begin{center}
@@ -397,13 +397,46 @@ Na computação, a lista de adjacências é uma das formas de representação de
     \end{center}
 \end{figure}
 
+Na computação, a lista de adjacências é uma das formas de representação de um grafo, existindo também a representação por matriz. Na lista de adjacências, têm-se as ligações de vértices e arestas com seus pesos respectivos. É uma maneira de codificar relações emparelhadas entre um conjunto de objetos. Consiste em uma coleção $V$ de nós e uma coleção $E$ de arestas, onde as arestas juntam dois nós \cite{Kleinberg+Tardos:06a}.
+
+De acordo com \citeonline{prestes2016introduccao},  um grafo $G = (V, A)$, com $|V| = n$ e $|A| = m$, pode ser representado como uma matriz de adjacência. A matriz de adjacência é uma matriz $M = [m_{i,j}]$ simétrica  $n\times n$ que armazena o relacionamento entre os vértices do grafo. Cada entrada $m_{i,j}$ é igual a:
+
+\[ m_{i, j} =
+  \begin{cases}
+    0,       & \quad \text{se } i \text{ não é adjacente a } j \\
+    m,  & \quad \text{se } i \text{ é adjacente a } j \text{ com } i \neq j \\
+    p, & \quad \text{se } i = j, p \text { é a quantidade de laços incidentes ao vértice } i
+  \end{cases}
+\]
+
+\begin{figure}[H]
+    \begin{center}
+        \caption{Exemplo de um Grafo para a representação em Matrizes}
+        \label{grafo_matriz}
+        \includegraphics[scale=0.7]{figuras/Embasamento/grafo.png}
+        \legend{Fonte: \cite{prestes2016introduccao}}
+    \end{center}
+\end{figure}
+
+A Figura \ref{matriz_adj} representa uma matriz de adjacência para o Grafo exemplificado na Figura \ref{grafo_matriz}.
+
+\begin{figure}[H]
+    \begin{center}
+        \caption{Matriz de adjacência para o Grafo da Figura \ref{grafo_matriz}}
+        \label{matriz_adj}
+        \includegraphics[scale=0.7]{figuras/Embasamento/matriz.png}
+        \legend{Fonte: \cite{prestes2016introduccao}}
+    \end{center}
+\end{figure}
+
+
 \subsubsection{Algoritmo de Menor Caminho}
 
 \label{sec:ssp}
 
-O Algoritmo de Menor Caminho consiste em calcular, para cada vértice V, a menor distância de S para V, ou seja, a menor soma possível de pesos de arestas que formem um caminho de S para V, onde S e V são vértices dentro de um grafo G. Os Algoritmos de \textit{Dijkstra} e \textit{Floyd-Warshall} são os mais conhecidos para realizar o cálculo da menor distância entre dois vértices \cite{even2011graph}.
+O Algoritmo de Menor Caminho consiste em calcular, para cada vértice $V$, a menor distância de $S$ para $V$, ou seja, a menor soma possível de pesos de arestas que formem um caminho de $S$ para $V$, onde $S$ e $V$ são vértices dentro de um grafo $G$. Os Algoritmos de \textit{Dijkstra} e \textit{Bellman-Ford} são os mais conhecidos para realizar o cálculo da menor distância entre dois vértices \cite{even2011graph}.
 
-No caso do presente trabalho, foi utilizado o Algoritmo de Dijkstra para se calcular o menor caminho entre as relações de requisitos funcionais e não funcionais para que se tenha o Produto Mínimo Viável, na sua versão preliminar.
+No caso do presente trabalho, foi utilizado o Algoritmo de Dijkstra para se calcular o menor caminho entre as relações de requisitos funcionais e não funcionais para que se tenha o Produto Mínimo Viável, na sua versão preliminar. Foi escolhido esse algoritmo por não haver pesos negativos na modelagem do grafo do relacionamento entre os requisitos.
 
 \section{Resumo do Capítulo}
 
@@ -413,6 +446,6 @@ Neste capítulo, foram apresentados os principais conceitos que servem como base
 
 Para a apresentação desses conceitos, fez-se necessária uma breve explicação sobre cada etapa do processo de Engenharia de Requisitos, fazendo correlação com a ferramenta desenvolvida. O grande intuito é contextualizar o processo e os artefatos gerados em cada etapa.
 
-Em seguida, tem-se uma explanação concreta da Engenharia de Requisitos e sua importância no processo de construção de um produto de \textit{software}, bem como diversas etapas essenciais neste processo, de modo a oferecer um panorama geral a respeito da Engenharia de Requisitos. Em seguida, foram apresentadas as principais etapas no processo de Engenharia de Requisitos, sendo elas: Pré-rastreabilidade; Pós-rastreabilidade; Elicitação; Modelagem; Verificação; e Priorização;
+Em seguida, tem-se uma explanação concreta da Engenharia de Requisitos e sua importância no processo de construção de um produto de \textit{software}, bem como diversas etapas essenciais neste processo, de modo a oferecer um panorama geral a respeito da Engenharia de Requisitos. Em seguida, foram apresentadas as principais etapas no processo de Engenharia de Requisitos, sendo elas: Pré-rastreabilidade; Pós-rastreabilidade; Elicitação; Modelagem; Verificação; e Priorização.
 
 Por fim foram explorados conceitos importantes no contexto do desenvolvimento deste trabalho que foram o \textit{House of Quality} e os Grafos.

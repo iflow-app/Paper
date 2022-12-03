@@ -10,12 +10,30 @@
 \newcommand{\membroConvidadoUm}[1]{\def\imprimirmembroconvidadoum{#1}}
 \newcommand{\membroConvidadoDois}[1]{\def\imprimirmembroconvidadodois{#1}}
 
-\addto\captionsbrazil{\renewcommand\lstlistingname{Lista de Códigos}}
+\trivfloat{quadro}
+\floatstyle{plaintop} % Forçar posição da legenda para o topo
+\restylefloat{quadro} % Aplica a mudança de estilo no ambiente quadro
+\renewcommand{\listquadroname}{Lista de Quadros} % Forçar texto na Lista de Quadros
+
+\addto\captionsbrazil{\renewcommand\lstlistingname{Código}}
 \addto\captionsbrazil{\renewcommand\lstlistlistingname{Lista de Códigos}}
 
+\lstset {
+    breaklines=true,
+    numbers=left,
+    numbersep=5pt,
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    keywordstyle=\color{blue},
+    backgroundcolor=\color{backcolour},
+    emph={int,char,double,float,unsigned,void,bool, string, number},
+    otherkeywords={>,<,.,;,-,!,=,~,[,]},
+    morekeywords={>,<,.,;,-,!,=,~,[,]},
+}
 \addto\captionsbrazil{\renewcommand{\listfigurename}{Lista de Ilustrações}}
 \addto\captionsbrazil{\renewcommand{\listtablename}{Lista de Tabelas}}
 \addto\captionsbrazil{\renewcommand{\listadesiglasname}{Lista de Abreviaturas e Siglas}}
+
 
 \newcommand\BackgroundPic{%
 \put(0,0){%
